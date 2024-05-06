@@ -94,7 +94,7 @@ def train_model(model_name, train_dataset, test_dataset, output_dir):
     perplexity = math.exp(eval_results['eval_loss'])
     return perplexity
 
-    def train_and_evaluate()
+    def train_and_evaluate(models, model_type):
         for model_name, (corpus, output_dir) in models.items():
             corpus_dataset = Dataset.from_dict({"sentences": corpus})
             corpus_dataset = corpus_dataset.shuffle(seed=42)
